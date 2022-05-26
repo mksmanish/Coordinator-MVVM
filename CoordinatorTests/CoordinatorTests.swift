@@ -45,7 +45,7 @@ class CoordinatorTests: XCTestCase {
     }
     
     func testmath() {
-        XCTAssertEqual(2+3, 5)
+        XCTAssertEqual(2+3, 4)
     }
     
 }
