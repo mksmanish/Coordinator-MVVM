@@ -5,6 +5,6 @@ workflows:
       - name: CICD Started
         script: echo "Welcome of your CICD Set Up"
     publishing:
-    email:
+      email:
         recipients:
           - manish123kumar79@gmail.com    
