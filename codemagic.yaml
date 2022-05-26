@@ -1,0 +1,10 @@
+workflows:
+  Coordinator-workflow:
+    name: Coordinator Pipeline
+    scripts:
+      - name: CICD Started
+        script: echo "Welcome of your CICD Set Up"
+    publishing:
+    email:
+        recipients:
+          - manish123kumar79@gmail.com    
