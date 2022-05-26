@@ -7,6 +7,7 @@ workflows:
             xcode-project run-tests \
               --workspace Coordinator.xcworkspace \
               --scheme Coordinator \
+              --device "iPhone 11"
     publishing:
       email:
         recipients:
