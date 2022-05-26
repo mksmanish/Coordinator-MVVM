@@ -1,9 +1,9 @@
 workflows:
   Coordinator-workflow:
-    name: iOS test
-    script: |
-        xcode-project run-tests \
-        --workspace Coordinator.xcodeproj \
-        --scheme Coordinator \
-        --device "iPhone 11"
-    test_report: build/ios/test/*.xml        
+    name: Coordintor pipeline
+    scripts: |
+        - name: CICD started
+          script: echo "welcome test"
+    publishing:
+      email:
+        - manish123kumar79@gmail.com
