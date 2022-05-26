@@ -10,6 +10,7 @@
 		8E024C002835059F00786453 /* ImagePickerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E024BFF2835059F00786453 /* ImagePickerCoordinator.swift */; };
 		8E5F0F512833ACA8006F7B43 /* TitleSubtitleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5F0F502833ACA8006F7B43 /* TitleSubtitleViewModel.swift */; };
 		8E5F0F542833AD36006F7B43 /* TitleSubtitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5F0F532833AD36006F7B43 /* TitleSubtitleCell.swift */; };
+		8E61EECE283F42F0001D2474 /* CoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E61EECD283F42F0001D2474 /* CoordinatorTests.swift */; };
 		8E6A5EE9283B14CA008D1E2D /* UIimage + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6A5EE8283B14CA008D1E2D /* UIimage + Extension.swift */; };
 		8E6A5EEB283B1CF3008D1E2D /* EventDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6A5EEA283B1CF3008D1E2D /* EventDetailCoordinator.swift */; };
 		8E6A5EED283B1ECD008D1E2D /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6A5EEC283B1ECD008D1E2D /* EventDetailViewController.swift */; };
@@ -40,10 +41,22 @@
 		8EEABA7E28321FEE003EA1BE /* AddEventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEABA7D28321FEE003EA1BE /* AddEventViewModel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8E61EECF283F42F0001D2474 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8EBC581E282E1DDF00496A95 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8EBC5825282E1DDF00496A95;
+			remoteInfo = Coordinator;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		8E024BFF2835059F00786453 /* ImagePickerCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerCoordinator.swift; sourceTree = "<group>"; };
 		8E5F0F502833ACA8006F7B43 /* TitleSubtitleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSubtitleViewModel.swift; sourceTree = "<group>"; };
 		8E5F0F532833AD36006F7B43 /* TitleSubtitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSubtitleCell.swift; sourceTree = "<group>"; };
+		8E61EECB283F42F0001D2474 /* CoordinatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoordinatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E61EECD283F42F0001D2474 /* CoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorTests.swift; sourceTree = "<group>"; };
 		8E6A5EE8283B14CA008D1E2D /* UIimage + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIimage + Extension.swift"; sourceTree = "<group>"; };
 		8E6A5EEA283B1CF3008D1E2D /* EventDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailCoordinator.swift; sourceTree = "<group>"; };
 		8E6A5EEC283B1ECD008D1E2D /* EventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +90,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8E61EEC8283F42F0001D2474 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8EBC5823282E1DDF00496A95 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -110,6 +130,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		8E61EECC283F42F0001D2474 /* CoordinatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				8E61EECD283F42F0001D2474 /* CoordinatorTests.swift */,
+			);
+			path = CoordinatorTests;
+			sourceTree = "<group>";
+		};
 		8E6BD99928366D25001BA86C /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				8EBC5828282E1DDF00496A95 /* Coordinator */,
+				8E61EECC283F42F0001D2474 /* CoordinatorTests */,
 				8EBC5827282E1DDF00496A95 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -131,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				8EBC5826282E1DDF00496A95 /* Coordinator.app */,
+				8E61EECB283F42F0001D2474 /* CoordinatorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -193,6 +223,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8E61EECA283F42F0001D2474 /* CoordinatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E61EED3283F42F0001D2474 /* Build configuration list for PBXNativeTarget "CoordinatorTests" */;
+			buildPhases = (
+				8E61EEC7283F42F0001D2474 /* Sources */,
+				8E61EEC8283F42F0001D2474 /* Frameworks */,
+				8E61EEC9283F42F0001D2474 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E61EED0283F42F0001D2474 /* PBXTargetDependency */,
+			);
+			name = CoordinatorTests;
+			productName = CoordinatorTests;
+			productReference = 8E61EECB283F42F0001D2474 /* CoordinatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		8EBC5825282E1DDF00496A95 /* Coordinator */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8EBC583A282E1DE100496A95 /* Build configuration list for PBXNativeTarget "Coordinator" */;
@@ -220,6 +268,10 @@
 				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
+					8E61EECA283F42F0001D2474 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 8EBC5825282E1DDF00496A95;
+					};
 					8EBC5825282E1DDF00496A95 = {
 						CreatedOnToolsVersion = 13.3;
 					};
@@ -239,11 +291,19 @@
 			projectRoot = "";
 			targets = (
 				8EBC5825282E1DDF00496A95 /* Coordinator */,
+				8E61EECA283F42F0001D2474 /* CoordinatorTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8E61EEC9283F42F0001D2474 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8EBC5824282E1DDF00496A95 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -258,6 +318,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8E61EEC7283F42F0001D2474 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E61EECE283F42F0001D2474 /* CoordinatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8EBC5822282E1DDF00496A95 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -294,6 +362,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		8E61EED0283F42F0001D2474 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8EBC5825282E1DDF00496A95 /* Coordinator */;
+			targetProxy = 8E61EECF283F42F0001D2474 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		8EBC582F282E1DDF00496A95 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -314,6 +390,40 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		8E61EED1283F42F0001D2474 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.StrechCapitals.CoordinatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coordinator.app/Coordinator";
+			};
+			name = Debug;
+		};
+		8E61EED2283F42F0001D2474 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.StrechCapitals.CoordinatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coordinator.app/Coordinator";
+			};
+			name = Release;
+		};
 		8EBC5838282E1DE100496A95 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -485,6 +595,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8E61EED3283F42F0001D2474 /* Build configuration list for PBXNativeTarget "CoordinatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E61EED1283F42F0001D2474 /* Debug */,
+				8E61EED2283F42F0001D2474 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8EBC5821282E1DDF00496A95 /* Build configuration list for PBXProject "Coordinator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
