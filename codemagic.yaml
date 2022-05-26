@@ -8,9 +8,9 @@ workflows:
       email:
         recipients:
           - manish123kumar79@gmail.com
-    - name: iOS test
-   script: |
-     xcode-project run-tests \
+    name: iOS test
+    script: |
+        xcode-project run-tests \
         --workspace Coordinator.xcodeproj \
         --scheme Coordinator \
         --device "iPhone 11"
