@@ -11,8 +11,6 @@ workflows:
           xcode-project run-tests \
           --workspace Coordinator.xcworkspace \
           --scheme Coordinator \
-          --device "iPhone 11"
-  test_report: build/ios/test/*.xml
     publishing:
       email:
         recipients:
