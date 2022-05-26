@@ -6,6 +6,13 @@ workflows:
           script: echo "welcome test"
         - name: Build Coordinator
           script: xcodebuild build -workspace "Coordinator.xcworkspace" -scheme "Coordinator" CODE_SIGN_INDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
+        - name: iOS test
+          script: |
+          xcode-project run-tests \
+          --workspace Coordinator.xcworkspace \
+          --scheme Coordinator \
+          --device "iPhone 11"
+  test_report: build/ios/test/*.xml
     publishing:
       email:
         recipients:
