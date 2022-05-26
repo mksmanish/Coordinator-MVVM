@@ -4,6 +4,8 @@ workflows:
     scripts: 
         - name: CICD started
           script: echo "welcome test"
+        - name: Build Coordinator
+          script: xcodebuild build -workspace "Coordinator.xcworkspace" -scheme "Coordinator" CODE_SIGN_INDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
     publishing:
       email:
         recipients:
