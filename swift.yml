@@ -1,14 +1,19 @@
-workflows:
-  Coordinator-workflow:
-    name: Coordintor pipeline
-    scripts: 
-        - name: iOS test
-          script: |
-            xcode-project run-tests \
-              --workspace Coordinator.xcworkspace \
-              --scheme Coordinator \
-              --device "iPhone 12"
-    publishing:
-      email:
-        recipients:
-        - manish123kumar79@gmail.com
+name: Swift
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build
+      run: swift build -v
+    - name: Run tests
+      run: swift test -v
