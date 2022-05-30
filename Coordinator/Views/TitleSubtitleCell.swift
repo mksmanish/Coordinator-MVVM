@@ -15,7 +15,7 @@ final class TitleSubtitleCell: UITableViewCell {
     private let verticalStackView = UIStackView()
     private let constant: CFloat = 15
     private let datePickerView = UIDatePicker()
-    private let toolbar = UIToolbar(frame: .init(x: 0, y: 0, width: 100, height: 100))
+    private let toolbar = UIToolbar(frame: .init(x: 0, y: 0, width: 100, height: 101))
     lazy var doneButton:UIBarButtonItem = {
         UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(tappadDone))
     }()
