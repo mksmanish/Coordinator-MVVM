@@ -49,6 +49,8 @@ class CoordinatorTests: XCTestCase {
         XCTAssertEqual(2-3, -1)
         XCTAssertEqual(2+8, 10)
         XCTAssertEqual(2*3, 6)
+        XCTAssertEqual(2*2, 4)
+        
     }
     
 }
